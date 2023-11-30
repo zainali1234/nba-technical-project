@@ -1,0 +1,21 @@
+The provided database architecture is designed to manage basketball-related data. It consists of several 
+interconnected tables that capture information about basketball teams, players, games, player statistics, and shots.
+
+• The Teams table stores team information, with a unique team_id as the primary key and a team_name field.
+
+• The Players table holds player data, using a unique player_id as the primary key and a player_name field.
+
+• The Games table records game details, including a unique game_id, date, and foreign keys home_team_id and 
+away_team_id referencing the participating teams from the Teams table.
+
+• The PlayerGameStats table stores player-specific game statistics. It utilizes a stat_id as the primary key, 
+and foreign keys game_id, player_id, and team_id that relate to the Games, Players, and Teams tables. It also 
+includes various statistics columns like points, assists, rebounds, and more.
+
+• The Shots table captures individual shot attempts during games. Each shot has a unique shot_id, and a foreign key 
+stat_id connects it to the corresponding entry in the PlayerGameStats table. Additional columns include is_make, 
+location_x, and location_y.
+
+This architecture allows for comprehensive analysis of player performance, team dynamics, and game outcomes, 
+enabling insights into basketball statistics and strategies. The tables' relationships provide a structured 
+framework for storing and querying basketball-related data effectively.

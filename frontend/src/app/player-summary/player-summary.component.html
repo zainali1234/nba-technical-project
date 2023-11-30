@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+  <div class="container mt-5">
+    <h2 class="title">{{ PlayerName }} Game Stats</h2>
+    <p class="help-text">Click on a row to view shotmaking stats.<p>
+    <div class="table-container">
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th class="date">Date</th>
+            <th>Starter</th>
+            <th>Min</th>
+            <th>Pts</th>
+            <th>Ast</th>
+            <th>ORB</th>
+            <th>DRB</th>
+            <th>Stl</th>
+            <th>Blk</th>
+            <th>TO</th>
+            <th>DefFouls</th>
+            <th>OffFouls</th>
+            <th>FTM</th>
+            <th>FTA</th>
+            <th>2PM</th>
+            <th>2PA</th>
+            <th>3PM</th>
+            <th>3PA</th>
+          </tr>
+        </thead>
+        <tbody id="games-table">
+            
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+        <h2 class="modal-title">Shotmaking Stats</h2>
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th class="shot-outcome">Shot Outcome</th>
+              <th>Distance</th>
+              <th>Pt. Value</th>
+            </tr>
+          </thead>
+          <tbody id="shots-table">
+
+          </tbody>
+        </table>
+    </div>
+  </div>
+  
+</body>
+</html>
