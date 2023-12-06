@@ -6,13 +6,13 @@
 1. Download and install PostgreSQL from https://www.postgresql.org/download/
 2. Ensure PostgreSQL is running, and in a terminal run
     ```
-    createuser user --createdb;
+    createuser nbauser --createdb;
     createdb nbagames;
     ```
 3. connect to the nbagames database to grant permissions `psql nbagames`
     ```
     create schema app;
-    alter user okcapplicant with password 'basketball';
+    alter user nba with password 'basketball';
     grant all on schema app to user;
     ```
 
