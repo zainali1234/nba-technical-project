@@ -12,8 +12,8 @@
 3. connect to the nbagames database to grant permissions `psql nbagames`
     ```
     create schema app;
-    alter user nba with password 'basketball';
-    grant all on schema app to user;
+    alter user nbauser with password 'basketball';
+    grant all on schema app to nbauser;
     ```
 
 
